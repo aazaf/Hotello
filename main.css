@@ -41,7 +41,6 @@
 }
 
 .nav-bar-context {
-    border: 1px solid red;
     flex: 1;
     display: flex;
     align-items: center;
@@ -82,4 +81,35 @@
     color: #FE500A;
 }
 
+.booking-button {
+    padding: 8px 15px;
+    background: none;
+    margin: 0 20px;
+   border: 1px solid #FE500A;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-button:hover {
+    background-color: #FE500A;
+}
 /*-----nav----*/
+
+/*----search style----*/
+.search-wrapper {
+    width: 400px;
+    margin-right: 25px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+.search-type {
+    width: 50px;
+    height: 100%;
+    background-color: #DADADA;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/*----search style----*/

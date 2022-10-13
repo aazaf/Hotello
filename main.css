@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 100px;
 }
 
 .logo-outer > img {
@@ -44,7 +45,7 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 /*-----nav----*/
@@ -56,7 +57,7 @@
 .nav > li > span > a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 13px;
     text-transform: uppercase;
 }
 
@@ -103,13 +104,42 @@
     height: 40px;
     border-radius: 5px;
     background-color: white;
+    display: flex;
 }
 .search-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
     width: 50px;
     height: 100%;
     background-color: #DADADA;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.search-wrapper > input[type=search] {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 0 15px;
+}
+
+.search-wrapper > input[type=search]:focus {
+    outline: none;
+}
+.search-icon {
+    width: 50px;
+    height: 100%;
+    background-color: #FE500A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 /*----search style----*/

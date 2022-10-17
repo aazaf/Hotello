@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
 
 * {
     margin: 0;
@@ -28,6 +30,8 @@ body::-webkit-scrollbar-thumb {
     bottom: 275px;
     display: flex;
     flex-direction: column;
+    z-index: 10;
+
 }
 
 .social-inner-wrapper {
@@ -81,14 +85,21 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*---nav style----*/
 .nav-outer {
     width: 100%;
     height: 70px;
+    position: fixed;
+    top: 0;
     background-color: #120E43;
     display: flex;
+    z-index: 100;
+
 }
 
 .logo-outer {
@@ -134,6 +145,8 @@ body::-webkit-scrollbar-thumb {
     border-right: 1px solid white;
     padding: 5px 25px;
     border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
 }
 
 .nav > li:last-child {
@@ -213,5 +226,82 @@ body::-webkit-scrollbar-thumb {
     border-bottom-right-radius: 5px;
 
 }
-
 /*----search style----*/
+.middle-text-outer {
+    width: 100%;
+    height: 150px;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+
+/*slider middle text*/
+.book-today-text {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 60px;
+
+}
+.weekend-offer-text {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Alkalami', Serif, sans-serif;
+}
+/*slider middle text*/
+
+/*----booking widget-----*/
+.widget-main-outer {
+    width: 100%;
+    height: 70px;
+    /*border: 1px solid red;*/
+    margin-top: 60px;
+
+}
+.widget-inner {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.widget-component-wrapper:first-child {
+    width: 40%;
+}
+/*----booking widget-----*/
+.widget-component-wrapper {
+    height: 100%;
+    /*border: 1px solid red;*/
+    width: 20%;
+    display: flex;
+}
+.widget-component-wrapper > input[type=date],
+.widget-component-wrapper > select
+{
+    flex: 1;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+}
+.widget-component-wrapper > input[type=date]:focus,
+.widget-component-wrapper > select:focus
+{
+    outline: none;
+}
+.widget-component-wrapper > input[type=submit] {
+    flex: 1;
+    border: none;
+    background-color: #FE500A;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.widget-component-wrapper > input[type=submit]:hover {
+    background-color: #0F172B;
+    color: white;
+
+}
